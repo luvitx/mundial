@@ -1,9 +1,16 @@
 body#login {
-background: url(./img/messi.png) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    background: url(./img/messi.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;          
 }
 
 .container-login{
@@ -14,22 +21,171 @@ background-size: cover;
     height: 100vh;
 }
 
-.main{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;          
+.div-card{
+    display: none;
 }
 
-.formulario{
-    width: 364px;
+.div-form{
+    width: 382px;
     height: 301px;
     background: #FFFFFF;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    padding: 36px;
-}
-*{
-    font-family: "Raleway";
+    padding: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
 }
 
+
+
+.btn{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    width: 225px;
+    height: 35px;
+    left: calc(50% - 275px/2);
+    top: calc(50% - 35px/2 + 98px);
+    background: #374785;
+    border: 1px solid #24305E;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    }
+.flex-logo{
+
+position: fixed;
+background: #FFFFFF;
+width: 100vw;
+text-align: end;
+padding-right: 15px;
+bottom: 0;
+left: 0;
+
+}
+ 
+@media only screen and (max-width: 500px) {
+    body#login{
+        background: transparent;
+    }
+    .div-card{
+        display: flex;
+    }
+    .flex-logo{
+        text-align: center;
+        padding-right: 0px;
+    }
+    .div-form{
+        box-shadow: none;
+    }
+}
+
+ 
+.nav {
+    z-index: 2;
+}
+ 
+.navbar-brand {
+    font-style: italic;
+    font-weight: 600;
+ 
+    color: #119DD8;
+}
+ 
+#logoGuayerd {
+    padding-right: 8px;
+}
+ 
+.btn-cerrarSesion {
+    background: #374785;
+    color: #FFFFFF;
+    border: 1px solid #24305E;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+ 
+#bodyMap {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+ 
+#selJugadores {
+    font-family: 'Raleway', sans-serif;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    padding: 8px;
+    width: 420px;
+    position: fixed;
+    z-index: 1;
+    align-self: center;
+    top: 80px;
+}
+ 
+#map {
+    height: 100%;
+    z-index: 0;
+}
+ 
+.footer {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 0px 5px;
+}
+ 
+.footer>a>img {
+    padding: 0px 12px 0px 0px;
+}
+ 
+@media (max-width: 500px) {
+    #login {
+        background: #ffffff00;
+    }
+ 
+    .main {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+ 
+    .logoQatar {
+        display: block;
+    }
+ 
+    #selJugadores {
+        width: 80%;
+        
+    }
+ 
+    .btn-cerrarSesion {
+        width: 100%;
+    }
+ 
+    .btn {
+        background: #374785;
+        border: 1px solid #24305E;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+ 
+    .footer {
+        justify-content: center;
+    }
+}
