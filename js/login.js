@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
     localStorage.setItem("logged", "true");
     window.location.href = "./map.html";
   } else {
-    alert("Las credenciales introducidas son inválidas");
+    alert("Datos incorrectos por favor intenta de nuevo");
   }
 });
 
